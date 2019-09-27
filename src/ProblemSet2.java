@@ -28,23 +28,24 @@ public class ProblemSet2 {
          * name, grade, age, and hometown.
          */
 		 
-		System.out.print("\nEnter your first name: \n");
+		System.out.print("Enter your first name: ");
 		String firstName = in.nextLine();
-		System.out.print("\nEnter your last name: \n");
+		System.out.print("Enter your last name: ");
 		String lastName = in.nextLine();
-		System.out.print("\nEnter your grade: \n");
+		System.out.print("Enter your grade: ");
 		int grade = in.nextInt();
-		System.out.print("\nEnter your age: \n");
+		System.out.print("Enter your age: ");
 		int age = in.nextInt();
-		System.out.print("\nEnter your hometown: \n");
+		in.nextLine();
+		System.out.print("Enter your hometown: ");
 		String homeTown = in.nextLine();
 		//asks first name, last name, grade, age, and hometown (NAYA)
 		
         
-		System.out.println("\nNAME\t:”  + “ ” + firstName + " " + lastName"\n");
-        System.out.println("\nGRADE\t:" + “ ” + grade + "\n");
-		System.out.println("\nAGE\t:" + “ ” + age + "\n");
-		System.out.println("\HOMETOWN\t:" + “ ” + homeTown + "\n");
+		System.out.println("\nNAME      : " + firstName + " " + lastName);
+        System.out.println("GRADE     : " + "" + grade);
+		System.out.println("AGE       : " + age);
+		System.out.println("HOMETOWN  : " + homeTown);
 		/*prints first name, last name, grade, age, and hometown
 		 *based on the response of the code above (NAYA)
 		 */
@@ -64,8 +65,8 @@ public class ProblemSet2 {
 		// change amount (NAYA)
 		
 		System.out.print("\nEnter a dollar amount: ");
-		double.amount = in.nextDouble();
-		System.out.println("\n ");
+		double amount = in.nextDouble();
+		System.out.println(" ");
 		//asks the dollar amount (NAYA)
 		
 		amount = amount * 100;
@@ -84,11 +85,11 @@ public class ProblemSet2 {
 		 *based on the remainder (NAYA)
 		 */
 		
-		System.out.printf("/nDOLLARS\t\t: %.0f", amountOfDollars);
-		System.out.printf("/nQUARTERS\t\t: %.0f", amountOfQuarters);
-		System.out.printf("/nDIMES\t\t: %.0f", amountOfDimes);
-		System.out.printf("/nNICKELS\t\t: %.0f", amountOfNickels);
-		System.out.printf("/nPENNIES\t\t: %.0f", amountOfPennies);
+		System.out.printf("DOLLARS  : %.0f", amountOfDollars);
+		System.out.printf("\nQUARTERS : %.0f", amountOfQuarters);
+		System.out.printf("\nDIMES    : %.0f", amountOfDimes);
+		System.out.printf("\nNICKELS  : %.0f", amountOfNickels);
+		System.out.printf("\nPENNIES  : %.0f\n", amountOfPennies);
 		
 		/*prints bills, quarters, dimes, nickels, and pennies
 		 *based on the response of the code above (NAYA)
@@ -105,16 +106,16 @@ public class ProblemSet2 {
 		 double fiveDollars = 500;
 		 // limit
 		 
-		 System.out.print(“\nEnter a dollar amount: ”);
+		 System.out.print("\nEnter a dollar amount: ");
 		 double amount2 = in.nextDouble();
-         System.out.println("\n ");
+         System.out.println(" ");
          amount2 = amount2 * 100;
 		 //asks the dollar amount (NAYA)
 
-         double TEN = Math.floor(amount2/ten);
-         amount2 = amount2 % ten;
-         double FIVE = Math.floor(amount2/five);
-         amount2 = amount2 % five;
+         double TEN = Math.floor(amount2/tenDollars);
+         amount2 = amount2 % tenDollars;
+         double FIVE = Math.floor(amount2/fiveDollars);
+         amount2 = amount2 % fiveDollars;
          double amountOfDollars2 = Math.floor(amount2/dollar);
          amount2 = amount2%dollar;
          double bills = TEN + FIVE + amountOfDollars2;
