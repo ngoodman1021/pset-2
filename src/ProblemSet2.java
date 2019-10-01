@@ -112,7 +112,7 @@ public class ProblemSet2 {
 		 
 		 double tenDollars = 1000;
 		 double fiveDollars = 500;
-		 // limit
+		 // amount of ten or five in pennies
 		 
 		 System.out.print("\nEnter a dollar amount: ");
 		 double amount2 = in.nextDouble();
@@ -128,7 +128,7 @@ public class ProblemSet2 {
          amount2 = amount2%dollar;
          double bills = TEN + FIVE + amountOfDollars2;
 		 /*converts all change to bills
-		 *adds all of the bills up
+		 *adds all of the bills up (NAYA)
 		 */
 
          double amountOfQuarters2 = Math.floor(amount2/quarter);
@@ -141,18 +141,19 @@ public class ProblemSet2 {
          amount2 = amount2 % penny;
 		 double coins = amountOfQuarters2+amountOfDimes2+amountOfNickels2+amountOfPennies2; 	
 		 /*converts all change to the remainder
-		 *adds all of the change up
+		 *adds all of the change up (NAYA)
 		 */
 
          System.out.printf("BILLS : %.0f\n", bills);
          System.out.printf("COINS : %.0f\n", coins);
-		 //prints the amount of coins and bills
+		 //prints the amount of coins and bills (NAYA)
 
 
 
 
          /*
 		  * Exercise 4.
+		  *
 		  * Given a number of inches, print the equivalent number of miles, yards, feet,
 		  * and inches.
 		  */
@@ -164,7 +165,7 @@ public class ProblemSet2 {
          System.out.print("\nEnter a number of inches: ");
          double inches = in.nextDouble();
          System.out.println("");
-		 //asks for the amount of inches
+		 //asks for the amount of inches (NAYA)
 		 
 
          double miles = Math.floor(inches/inchesInMiles);
@@ -173,14 +174,14 @@ public class ProblemSet2 {
          inches = inches % inchesInYards;
          double feet = Math.floor(inches/inchesInFeet);
          inches = inches % inchesInFeet;
-		 //converts inches into other US measurements
+		 //converts inches into other US measurements(NAYA)
 
 
          System.out.printf("MILES  : %.0f\n", miles);
          System.out.printf("YARDS  : %.0f\n", yards);
          System.out.printf("FEET   : %.0f\n", feet);
          System.out.printf("INCHES : %.0f\n", inches);
-		 //prints the other US measurements
+		 //prints the other US measurements (NAYA)
 
 
 
@@ -194,24 +195,24 @@ public class ProblemSet2 {
 
          double centimeterInKilometers = 100000;
          double centimeterInMeters = 100;
-		 //conversion of the meteric system into centimeters
+		 //conversion of the meteric system into centimeters (NAYA)
 
          System.out.print("\nEnter a number of centimeters: ");
          double centimeters = in.nextDouble();
          System.out.println("");
-		 // asks for the amount of centimeters
+		 // asks for the amount of centimeters (NAYA)
 
          double kilometer = Math.floor(centimeters/centimeterInKilometers);
          centimeters = centimeters % centimeterInKilometers; 
          double meter = Math.floor(centimeters/centimeterInMeters);
          centimeters = centimeters % centimeterInMeters;
-		 //converts centimeters into the other meteric system
+		 //converts centimeters into the other meteric system (NAYA)
 
 
          System.out.printf("KILOMETERS  : %.0f\n", kilometer);
          System.out.printf("METERS      : %.0f\n", meter);
          System.out.printf("CENTIMETERS : %.0f\n", centimeters);
-		 // prints out centimeters and the other measurements
+		 // prints out centimeters and the other measurements (NAYA)
 
 
 
@@ -225,16 +226,16 @@ public class ProblemSet2 {
          System.out.print("\nEnter a diameter: ");
          double diameter = in.nextDouble();
          System.out.println("");
-		 //asks for the diameter in order to find the area and circumference
+		 //asks for the diameter in order to find the area and circumference (NAYA)
 		 
          double radius = diameter / 2;
          double circleArea = Math.PI * Math.pow(radius, 2);
          double circumference = 2 * Math.PI * radius;
-		 // equations to find each one
+		 // equations to find each one(NAYA)
 		 
          System.out.printf("AREA          : %.2f\n", circleArea);
          System.out.printf("CIRCUMFERENCE : %.2f\n", circumference);
-		 //prints out the area and circumference
+		 //prints out the area and circumference (NAYA)
 
         
 
@@ -252,17 +253,17 @@ public class ProblemSet2 {
          System.out.print("Enter a width: ");
          double rectangleWidth = in.nextDouble();
          System.out.println("");
-		 //asks for the width and the length
+		 //asks for the width and the length (NAYA)
 
          double rectangleArea = rectangleLength * rectangleWidth;
          double rectanglePerimeter = (rectangleLength * 2) + (rectangleWidth * 2);
          double diagonal = Math.hypot(rectangleLength, rectangleWidth);
-		 //equations for the perimeter, area, and the diagonal
-
+		 //equations for the perimeter, area, and the diagonal (NAYA)
+ 
          System.out.printf("AREA      : %.2f\n", rectangleArea);
          System.out.printf("PERIMETER : %.2f\n", rectanglePerimeter);
          System.out.printf("DIAGONAL  : %.2f\n", diagonal);
-		 //prints out the perimeter, area, and the diagonal
+		 //prints out the perimeter, area, and the diagonal (NAYA)
         
 
         
@@ -276,11 +277,11 @@ public class ProblemSet2 {
          System.out.print("\nEnter a side length: ");
          double hexagonLength = in.nextDouble();
          System.out.println("");
-		 //asks for the hexagon length
+		 //asks for the hexagon length (NAYA)
 
          double hexagonArea = ((3 * Math.sqrt(3)) / 2) * Math.pow(hexagonLength, 2);
          double hexagonPerimeter = 6 * hexagonLength;
-		 //equations to find the hexagon area and perimeter
+		 //equations to find the hexagon area and perimeter (NAYA)
 
          System.out.printf("AREA      : %.2f\n", hexagonArea);
          System.out.printf("PERIMETER : %.2f\n", hexagonPerimeter);
@@ -290,19 +291,51 @@ public class ProblemSet2 {
         
 
         
-        /*
+         /*
          * Exercise 9.
-         * 
+         *
          * Given a string, reverse and print the first and second halves of that string.
          */
-        
 
-        
+         System.out.print("\nEnter a String: ");
+         String str = in.nextLine();
+         System.out.println("");
+		 // asks for the string (NAYA)
+		 
+         String first = str.substring(str.length() / 2, str.length());
+         String second = str.substring(0, str.length() / 2);
+		 // reverses both halves of the string (NAYA)
+		 
+         System.out.print(first + second + "\n");
+		// prints the result (NAYA)
+
+
+
+
         /*
          * Exercise 10.
-         * 
+         *
          * Given a first, middle, and last name, print the corresponding initials.
          */
+
+         System.out.print("\nEnter your first name: ");
+         String firstName2 = in.nextLine();
+		 
+         System.out.print("Enter your middle name: ");
+         String middleName = in.nextLine();
+		 
+         System.out.print("Enter your last name: ");
+         String lastName2 = in.nextLine();
+		 //asks for first, middle, and last name (NAYA)
+	
+         char first = firstName2.charAt(0);
+         char middle = middleName.charAt(0);
+         char last = lastName2.charAt(0);
+		 // finds the first letter of each name (NAYA)
+		 
+         System.out.println("\n" + String.valueOf(first)+  String.valueOf(middle) + String.valueOf(last));
+		 //prints the initials
+
         
 
         
