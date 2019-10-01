@@ -132,30 +132,74 @@ public class ProblemSet2 {
          double amountOfPennies2 = amount2/penny;
          amount2 = amount2 % penny;
 		 double coins = amountOfQuarters2+amountOfDimes2+amountOfNickels2+amountOfPennies2; 	
-		/*converts all change to the remainder
+		 /*converts all change to the remainder
 		 *adds all of the change up
 		 */
 
          System.out.printf("BILLS : %.0f\n", bills);
          System.out.printf("COINS : %.0f\n", coins);
-		//prints the amount of coins and bills
+		 //prints the amount of coins and bills
 
 
-        /*
-         * Exercise 4.
-         * 
-         * Given a number of inches, print the equivalent number of miles, yards, feet,
-         * and inches.
-         */
+         /*
+		 * Exercise 4.
+		 * Given a number of inches, print the equivalent number of miles, yards, feet,
+		 * and inches.
+		 */
+			 
+	     double inchesInMiles = 63360;
+         double inchesInYards = 36;
+         double inchesInFeet = 12;
+
+         System.out.print("\nEnter a number of inches: ");
+         double inches = in.nextDouble();
+         System.out.println("");
+		 //asks for the amount of inches
+		 
+
+         double miles = Math.floor(inches/inchesInMiles);
+         inches = inches % inchesInMiles;
+         double yards = Math.floor(inches/inchesInYards);
+         inches = inches % inchesInYards;
+         double feet = Math.floor(inches/inchesInFeet);
+         inches = inches % inchesInFeet;
+		 //converts inches into other US measurements
 
 
-        
-        /*
+         System.out.printf("MILES  : %.0f\n", miles);
+         System.out.printf("YARDS  : %.0f\n", yards);
+         System.out.printf("FEET   : %.0f\n", feet);
+         System.out.printf("INCHES : %.0f\n", inches);
+		 //prints the other US measurements
+
+         /*
          * Exercise 5.
-         * 
+         *
          * Given a number of centimeters, print the equivalent number of kilometers,
          * meters, and centimeters.
          */
+
+         double centimeterInKilometers = 100000;
+         double centimeterInMeters = 100;
+		 //conversion of the meteric system into centimeters
+
+         System.out.print("\nEnter a number of centimeters: ");
+         double centimeters = in.nextDouble();
+         System.out.println("");
+		 // asks for the amount of centimeters
+
+         double kilometer = Math.floor(centimeters/centimeterInKilometers);
+         centimeters = centimeters % centimeterInKilometers; 
+         double meter = Math.floor(centimeters/centimeterInMeters);
+         centimeters = centimeters % centimeterInMeters;
+		 //converts centimeters into the other meteric system
+
+
+         System.out.printf("KILOMETERS  : %.0f\n", kilometer);
+         System.out.printf("METERS      : %.0f\n", meter);
+         System.out.printf("CENTIMETERS : %.0f\n", centimeters);
+		 // prints out centimeters and the other measurements
+
         
 
         
