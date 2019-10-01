@@ -21,6 +21,8 @@ public class ProblemSet2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
+
+
         /*
          * Exercise 1.
          * 
@@ -49,6 +51,9 @@ public class ProblemSet2 {
 		/*prints first name, last name, grade, age, and hometown
 		 *based on the response of the code above (NAYA)
 		 */
+		
+		
+		
 		
         /*
          * Exercise 2.
@@ -94,6 +99,9 @@ public class ProblemSet2 {
 		/*prints bills, quarters, dimes, nickels, and pennies
 		 *based on the response of the code above (NAYA)
 		 */
+
+
+
 
         /*
          * Exercise 3.
@@ -141,11 +149,13 @@ public class ProblemSet2 {
 		 //prints the amount of coins and bills
 
 
+
+
          /*
-		 * Exercise 4.
-		 * Given a number of inches, print the equivalent number of miles, yards, feet,
-		 * and inches.
-		 */
+		  * Exercise 4.
+		  * Given a number of inches, print the equivalent number of miles, yards, feet,
+		  * and inches.
+		  */
 			 
 	     double inchesInMiles = 63360;
          double inchesInYards = 36;
@@ -172,12 +182,15 @@ public class ProblemSet2 {
          System.out.printf("INCHES : %.0f\n", inches);
 		 //prints the other US measurements
 
+
+
+
          /*
-         * Exercise 5.
-         *
-         * Given a number of centimeters, print the equivalent number of kilometers,
-         * meters, and centimeters.
-         */
+          * Exercise 5.
+          *
+          * Given a number of centimeters, print the equivalent number of kilometers,
+          * meters, and centimeters.
+          */
 
          double centimeterInKilometers = 100000;
          double centimeterInMeters = 100;
@@ -200,31 +213,80 @@ public class ProblemSet2 {
          System.out.printf("CENTIMETERS : %.0f\n", centimeters);
 		 // prints out centimeters and the other measurements
 
+
+
+
+         /*
+          * Exercise 6.
+          *
+          * Given a diameter, print the area and circumference of the corresponding circle.
+          */
+
+         System.out.print("\nEnter a diameter: ");
+         double diameter = in.nextDouble();
+         System.out.println("");
+		 //asks for the diameter in order to find the area and circumference
+		 
+         double radius = diameter / 2;
+         double circleArea = Math.PI * Math.pow(radius, 2);
+         double circumference = 2 * Math.PI * radius;
+		 // equations to find each one
+		 
+         System.out.printf("AREA          : %.2f\n", circleArea);
+         System.out.printf("CIRCUMFERENCE : %.2f\n", circumference);
+		 //prints out the area and circumference
+
         
 
         
-        /*
-         * Exercise 6.
-         * 
-         * Given a diameter, print the area and circumference of the corresponding circle.
-         */
+         /*
+          * Exercise 7.
+          *
+          * Given a length and width, print the area, perimeter, and diagonal of the
+          * corresponding rectangle.
+          */
+
+         System.out.print("\nEnter a length: ");
+         double rectangleLength = in.nextDouble();
+		 
+         System.out.print("Enter a width: ");
+         double rectangleWidth = in.nextDouble();
+         System.out.println("");
+		 //asks for the width and the length
+
+         double rectangleArea = rectangleLength * rectangleWidth;
+         double rectanglePerimeter = (rectangleLength * 2) + (rectangleWidth * 2);
+         double diagonal = Math.hypot(rectangleLength, rectangleWidth);
+		 //equations for the perimeter, area, and the diagonal
+
+         System.out.printf("AREA      : %.2f\n", rectangleArea);
+         System.out.printf("PERIMETER : %.2f\n", rectanglePerimeter);
+         System.out.printf("DIAGONAL  : %.2f\n", diagonal);
+		 //prints out the perimeter, area, and the diagonal
         
 
-
-        /*
-         * Exercise 7.
-         * 
-         * Given a length and width, print the area, perimeter, and diagonal of the
-         * corresponding rectangle.
-         */
         
-
-        
+		
         /*
          * Exercise 8.
-         * 
+         *
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
+
+         System.out.print("\nEnter a side length: ");
+         double hexagonLength = in.nextDouble();
+         System.out.println("");
+		 //asks for the hexagon length
+
+         double hexagonArea = ((3 * Math.sqrt(3)) / 2) * Math.pow(hexagonLength, 2);
+         double hexagonPerimeter = 6 * hexagonLength;
+		 //equations to find the hexagon area and perimeter
+
+         System.out.printf("AREA      : %.2f\n", hexagonArea);
+         System.out.printf("PERIMETER : %.2f\n", hexagonPerimeter);
+         in.nextLine();
+		 //prints out the area and the perimeter
+
         
 
         
