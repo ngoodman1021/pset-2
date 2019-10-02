@@ -14,6 +14,13 @@
  * questions, and fix your mistakes. It's the only way to get good at programming.
  */
 
+
+/*
+ * Problem Set 2.
+ * Copyright (c) 2019. UCVTS and its affiliated.
+ * Use is allowed as long as credit is given.
+ */
+
 import java.util.Scanner;
 
 public class ProblemSet2 {
