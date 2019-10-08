@@ -15,7 +15,7 @@
  */
 
 
-/*
+/**
  * Problem Set 2.
  * Copyright (c) 2019. UCVTS and its affiliated.
  * Use is allowed as long as credit is given.
@@ -335,12 +335,12 @@ public class ProblemSet2 {
          String lastName2 = in.nextLine();
 		 //asks for first, middle, and last name (NAYA)
 	
-         char first = firstName2.charAt(0);
+         char first2 = firstName2.charAt(0);
          char middle = middleName.charAt(0);
          char last = lastName2.charAt(0);
 		 // finds the first letter of each name (NAYA)
 		 
-         System.out.println("\n" + String.valueOf(first)+  String.valueOf(middle) + String.valueOf(last));
+         System.out.println("\n" + String.valueOf(first2)+  String.valueOf(middle) + String.valueOf(last));
 		 //prints the initials
 
         
